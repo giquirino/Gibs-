@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gibs+</title>
+</head>
+
+<body>
+    <script>
+        const chaveLogin = 'usuarioLogado';
+        if (localStorage.getItem(chaveLogin) === 'true') {
+            window.location.href = 'home.html';
+        } else {
+            window.location.href = 'login.html';
+        }
+    </script>
+    <noscript>
+        <p>JavaScript é necessário. <a href="login.html">Clique aqui para entrar</a>.</p>
+    </noscript>
+</body>
+
+</html>

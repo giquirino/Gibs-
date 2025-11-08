@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar no Gibs+</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-body">
+    <div class="login-container">
+        <h1>Entrar no Gibs+</h1>
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="password" id="senha" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <script>
+        if (localStorage.getItem("usuarioLogado") === "true") {
+            window.location.href = "home.html";
+        }
+
+        const emailCadastrado = "giquirino@gibsplus.com";
+        const senhaCadastrada = "12345";
+
+        document.getElementById("loginForm").addEventListener("submit", (event) => {
+            event.preventDefault();
+            const email = document.getElementById("email").value.trim();
+            const senha = document.getElementById("senha").value.trim();
+
+            if (email === emailCadastrado && senha === senhaCadastrada) {
+                localStorage.setItem("usuarioLogado", "true");
+                window.location.href = "home.html";
+            } else {
+                alert("E-mail ou senha incorretos! Tente novamente.");
+            }
+        });
+    </script>
+</body>
+
+</html>

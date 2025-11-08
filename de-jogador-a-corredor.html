@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-saiba-mais.css">
+    <title>Gran Turismo: De Jogador a Corredor (2023) - Resenha</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Gibs+</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="portfolio.html">Sobre</a></li>
+                <li><button id="logoutBtn" class="logout-btn">Sair</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function () {
+            localStorage.removeItem('usuarioLogado');
+            window.location.href = 'login.html';
+        });
+    </script>
+
+    <main>
+        <section class="categoria">
+            <h2>Resenha: Gran Turismo (2023)</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="img/gran-turismo.jpg" alt="Gran Turismo: De Jogador a Corredor" />
+                    <div class="card-content">
+                        <div class="stars">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                        
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                        
+                            <input type="radio" id="star3" name="rating" value="3" checked>
+                            <label for="star3">&#9733;</label>
+                        
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">&#9733;</label>
+                        
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">&#9733;</label>
+                        </div>                        
+
+                        <p><strong>Gran Turismo</strong>, dirigido por Neill Blomkamp, adapta a história real de Jann
+                            Mardenborough, gamer que sai dos simuladores para competir em pistas reais. O filme aposta
+                            na adrenalina e na velocidade para envolver o espectador. Apesar de uma premissa que poderia
+                            parecer genérica, se destaca pela execução energética e ritmo ágil.</p>
+
+                        <p>Archie Madekwe entrega uma atuação sólida como Jann, transmitindo determinação e
+                            vulnerabilidade. David Harbour brilha como mentor durão com coração mole, equilibrando
+                            tensão e humor. As interações entre os personagens ajudam a humanizar a narrativa.</p>
+
+                        <p>As sequências de corrida são cinematográficas, com drones, câmeras embarcadas e design sonoro
+                            pulsante. Elas transmitem emoção e velocidade, mesmo que algumas cenas sejam estilizadas
+                            demais. Para fãs de jogos e corridas, esse aspecto é o grande atrativo do filme.</p>
+
+                        <p>Apesar de clichês e do uso evidente de marcas, a obra é uma experiência leve e divertida.
+                            Mantém um tom otimista e inspira a audiência com a história de superação. No geral, é
+                            indicado para quem busca entretenimento rápido e emocionante.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Gibs+. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>

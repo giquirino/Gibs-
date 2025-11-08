@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Gibs+</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Gibs+</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="portfolio.html">Sobre</a></li>
+                <li>
+                    <button id="logoutBtn" class="logout-btn">Sair</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function () {
+            localStorage.removeItem('usuarioLogado');
+            window.location.href = 'login.html';
+        });
+    </script>
+
+    <section class="banner">
+        <div class="banner-content">
+            <img src="img/cartas-para-julieta.jpg" alt="Cartas para Julieta" class="banner-img">
+            <div class="banner-info">
+                <h1>Cartas para Julieta (2010)</h1>
+                <p>Quando uma carta de décadas atrás chega às suas mãos, ela embarca em uma viagem para provar que o
+                    amor sempre encontra um caminho.</p>
+                <a href="https://youtu.be/WZPu_82sBZY?si=YizaOXKm2UZXX6pE" class="banner-btn" target="_blank">Assistir
+                    ao
+                    trailer</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="categoria">
+            <h2>Favoritos de Gigibs</h2>
+            <div class="grid">
+                <div class="card">
+                    <a href="https://youtu.be/-0gX9g4Lxm8?si=vhCke6VnBrSEOKj8" target="_blank">
+                        <img src="img/questão-de-tempo.jpg" alt="Questão de Tempo">
+                    </a>
+                    <h3>Questão de Tempo (2013)</h3>
+                    <a href="" class="saiba">Saiba mais</a>
+                </div>
+
+                <div class="card">
+                    <a href="https://youtu.be/rO7NmYVLswA?si=EYcAp8JWv654GTMA" target="_blank">
+                        <img src="img/de-jogador-a-corredor.jpg" alt="Gran Turismo: De Jogador a Corredor">
+                    </a>
+                    <h3>Gran Turismo: De Jogador a Corredor (2023)</h3>
+                    <a href="de-jogador-a-corredor.html" class="saiba">Saiba mais</a>
+                </div>
+
+                <div class="card">
+                    <a href="https://youtu.be/sSbxgk5IEMU?si=2z2YjTCAJLJ_Yw1Y" target="_blank">
+                        <img src="img/o-lobo-de-wall-street.jpg" alt="O Lobo de Wall Street">
+                    </a>
+                    <h3>O Lobo de Wall Street (2013)</h3>
+                    <a href="o-lobo-de-wall-streeet.html" class="saiba">Saiba mais</a>
+                </div>
+
+                <div class="card">
+                    <a href="https://youtu.be/9WmwCkmKcio?si=r1gbEkxyBtk1jGno" target="_blank">
+                        <img src="img/amor-de-redenção.jpg" alt="Amor de Redenção">
+                    </a>
+                    <h3>Amor de Redenção (2022)</h3>
+                    <a href="" class="saiba">Saiba mais</a>
+                </div>
+
+                <div class="card">
+                    <a href="https://youtu.be/BD8W7bV4eSY?si=KQ8JFdSEavVB2i3D" target="_blank">
+                        <img src="img/lances-da-vida.jpg" alt="One Tree Hill: Lances da Vida">
+                    </a>
+                    <h3>One Tree Hill: Lances da Vida (2003-2012)</h3>
+                    <a href="" class="saiba">Saiba mais</a>
+                </div>
+
+                <div class="card">
+                    <a href="https://youtu.be/L7tAkQAFRBM?si=ruMCdmhD0yYxbgpR" target="_blank">
+                        <img src="img/perdida.jpg" alt="Perdida">
+                    </a>
+                    <h3>Perdida (2023)</h3>
+                    <a href="" class="saiba">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="categoria">
+            <h2>Recomendados por Gigibs</h2>
+            <div class="grid">
+                <div class="card">
+                    <a href="https://youtu.be/hujU0dw6Erk?si=29hq5ZybBoC--0x9" target="_blank">
+                        <img src="img/velozes-e-furiosos-7.jpg" alt="Velozes & Furiosos 7">
+                    </a>
+                    <h3>Velozes & Furiosos 7 (2015)</h3>
+                    <a href="" class="saiba">Saiba mais</a>
+                </div>
+
+                <div class="card">
+                    <a href="https://youtu.be/PmqQyrycpmE" target="_blank">
+                        <img src="img/starstruck.jpg" alt="StarStruck: Meu Namorado é uma Superestrela">
+                    </a>
+                    <h3>StarStruck: Meu Namorado é uma Superestrela (2010)</h3>
+                    <a href="" class="saiba">Saiba mais</a>
+                </div>
+
+                <div class="card">
+                    <a href="https://youtu.be/8iAfIoFSNEo?si=XYzKMom-VMhDKmgV" target="_blank">
+                        <img src="img/a-nova-cinderela.jpg" alt="A Nova Cinderela">
+                    </a>
+                    <h3>A Nova Cinderela (2004)</h3>
+                    <a href="" class="saiba">Saiba mais</a>
+                </div>
+
+                <div class="card">
+                    <a href="https://youtu.be/3IDeifYOCvM?si=4IV8E2uAxLRxgoSm" target="_blank">
+                        <img src="img/como-perder-um-homem-em-10-dias.jpg" alt="Como Perder um Homem em 10 Dias">
+                    </a>
+                    <h3>Como Perder um Homem em 10 Dias (2003)</h3>
+                    <a href="" class="saiba">Saiba mais</a>
+                </div>
+
+                <div class="card">
+                    <a href="https://youtu.be/Nj-Y37_Av2E?si=hl--emO_lU5M8qWj" target="_blank">
+                        <img src="img/enrolados.jpg" alt="Enrolados">
+                    </a>
+                    <h3>Enrolados (2010)</h3>
+                    <a href="" class="saiba">Saiba mais</a>
+                </div>
+
+                <div class="card">
+                    <a href="https://youtu.be/kaT66exvYcc?si=LmgB_OmYB9r7skgA" target="_blank">
+                        <img src="img/ela-dança-eu-danço-5.jpg" alt="Ela Dança, Eu Danço 5: Tudo ou Nada">
+                    </a>
+                    <h3>Ela Dança, Eu Danço 5: Tudo ou Nada (2014)</h3>
+                    <a href="" class="saiba">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Gibs+. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>

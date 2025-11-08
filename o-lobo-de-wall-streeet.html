@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-saiba-mais.css">
+    <title>O Lobo de Wall Street (2013) - Resenha</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Gibs+</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="portfolio.html">Sobre</a></li>
+                <li><button id="logoutBtn" class="logout-btn">Sair</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        document.getElementById('logoutBtn').addEventListener('click', function () {
+            localStorage.removeItem('usuarioLogado');
+            window.location.href = 'login.html';
+        });
+    </script>
+
+    <main>
+        <section class="categoria">
+            <h2>Resenha: O Lobo de Wall Street (2013)</h2>
+            <div class="grid">
+                <div class="card">
+                    <img src="img/wall-street.jpg" alt="O Lobo de Wall Street" />
+                    <div class="card-content">
+                        <div class="stars">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">&#9733;</label>
+                        
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">&#9733;</label>
+                        
+                            <input type="radio" id="star3" name="rating" value="3" checked>
+                            <label for="star3">&#9733;</label>
+                        
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">&#9733;</label>
+                        
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">&#9733;</label>
+                        </div>                        
+
+                        <p><strong>O Lobo de Wall Street</strong>, dirigido por Martin Scorsese, conta a trajetória de
+                            Jordan Belfort, corretor ambicioso que conquista fortuna e poder com excessos e
+                            ilegalidades. O filme combina humor ácido, crítica social e cenas eletrizantes de negócios.
+                            Leonardo DiCaprio entrega uma performance magnética e carismática.</p>
+
+                        <p>DiCaprio dá vida a Belfort com energia e intensidade, equilibrando charme e decadência. Jonah
+                            Hill e Margot Robbie brilham como coadjuvantes, adicionando humor e tensão à narrativa. A
+                            química do elenco torna o filme envolvente e memorável.</p>
+
+                        <p>As sequências de excessos, festas e negociações são cinematográficas, exageradas e
+                            hipnóticas. A direção ágil de Scorsese mantém o ritmo acelerado e o público preso à tela. A
+                            edição e a trilha sonora ajudam a transmitir a energia e a loucura do ambiente financeiro.
+                        </p>
+
+                        <p>Apesar de escancarar corrupção e excessos, o filme diverte e provoca reflexão sobre ganância
+                            e moralidade. Mantém um tom ousado e irreverente que prende a atenção. É indicado para quem
+                            gosta de filmes intensos, com humor negro e performances marcantes.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Gibs+. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
